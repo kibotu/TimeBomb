@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(net.kibotu.timebomb.R.layout.activity_main);
+        setContentView(R.layout.activity_main);
 
         TimeBomb.bombAfterDays(this, Long.parseLong(BuildConfig.BUILD_DATE), 14);
     }
