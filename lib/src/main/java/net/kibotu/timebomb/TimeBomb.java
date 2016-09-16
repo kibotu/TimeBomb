@@ -17,9 +17,15 @@ public class TimeBomb {
 
     private static final String TAG = TimeBomb.class.getSimpleName();
 
-    private static SimpleDateFormat sdf1 = new SimpleDateFormat("dd.MM.yyyy");
-
+    /**
+     * Blocks User from keep using the app.
+     *
+     * @param context   Context
+     * @param buildTime Unix Timestamp.
+     * @param days      Amount of days after build time when the blocking should be triggered.
+     */
     public static void bombAfterDays(Context context, long buildTime, int days) {
+        SimpleDateFormat sdf1 = new SimpleDateFormat("dd.MM.yyyy");
         Calendar calendar = Calendar.getInstance();
         calendar.setTimeInMillis(buildTime);
         Date buildDate = calendar.getTime();

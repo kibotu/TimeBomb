@@ -1,4 +1,4 @@
-# TimeBomb [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)  [![Gradle Version](https://img.shields.io/badge/gradle-3.0-green.svg)](https://docs.gradle.org/current/release-notes) [![Retrolambda](https://img.shields.io/badge/java-8-green.svg)](https://github.com/evant/gradle-retrolambda)
+# TimeBomb [![](https://jitpack.io/v/kibotu/TimeBomb.svg)](https://jitpack.io/#kibotu/TimeBomb) [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)  [![Gradle Version](https://img.shields.io/badge/gradle-3.0-green.svg)](https://docs.gradle.org/current/release-notes) [![Retrolambda](https://img.shields.io/badge/java-8-green.svg)](https://github.com/evant/gradle-retrolambda)
 
 ## Introduction
 
@@ -6,7 +6,7 @@ Blocks the user from keep using the App after a period of time based on build ti
 
 ## How to install
 
-    compile 'net.kibotu:timebomb:<VERSION>'
+    compile 'com.github.kibotu:TimeBomb:-SNAPSHOT'
 
 ## How to build
 
@@ -24,19 +24,17 @@ Blocks the user from keep using the App after a period of time based on build ti
 
 ## How to use
 
-1 Add to build date to defaultConfig
+1. Add to build date to defaultConfig
 
      buildConfigField "String", "BUILD_DATE", "\"" + new Date().getTime() + "\""
 
-2 Invoke check at app start
+2. Invoke check at app start
 
     TimeBomb.bombAfterDays(this, BuildConfig.BUILD_DATE, 14);
 
-Adapt Message in string.xml 
+(Optional) Adapt Message in string.xml 
 
     <string name="time_bomb_message">This Version is no longer Supported. Please update.</string>
-
-// add public apis and requirements
 
 ## Contributors
 
