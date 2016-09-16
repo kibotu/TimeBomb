@@ -26,13 +26,11 @@ Blocks the user from keep using the App after a period of time based on build ti
 
 1. Add to build date to defaultConfig
 
-    
-    buildConfigField "String", "BUILD_DATE", "\"" + new Date().getTime() + "\""
+        buildConfigField "String", "BUILD_DATE", "\"" + new Date().getTime() + "\""
 
 2. Invoke check at app start
-
-    
-    TimeBomb.bombAfterDays(this, BuildConfig.BUILD_DATE, 14);
+   
+        TimeBomb.bombAfterDays(this, BuildConfig.BUILD_DATE, 14);
 
 (Optional) Adapt Message in string.xml 
 
