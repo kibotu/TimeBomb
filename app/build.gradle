@@ -6,11 +6,13 @@ android {
     compileSdkVersion 24
     buildToolsVersion "24.0.2"
     defaultConfig {
-        applicationId "net.kibotu.timebomb"
+        applicationId "net.kibotu.timebomb.app"
         minSdkVersion 15
         targetSdkVersion 24
         versionCode 1
         versionName "1.0"
+
+        buildConfigField "String", "BUILD_DATE", "\"" + new Date().getTime() + "\""
     }
 
     buildTypes {
@@ -26,7 +28,6 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             proguardFile 'proguard-net.kibotu.pro'
             proguardFile 'proguard-retrolambda.pro'
-            proguardFile 'proguard-square-retrofit2.pro'
             proguardFile 'proguard-google-support.pro'
             proguardFile 'proguard-google-play-services.pro'
         }
@@ -71,6 +72,7 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile project(':lib')
     compile 'com.android.support:appcompat-v7:24.2.1'
 }
 

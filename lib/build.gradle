@@ -36,11 +36,9 @@ android {
             minifyEnabled true
             shrinkResources = true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
-            proguardFile 'proguard-computop.pro'
+            proguardFile 'proguard-net.kibotu.pro'
             proguardFile 'proguard-retrolambda.pro'
-            proguardFile 'proguard-square-retrofit2.pro'
             proguardFile 'proguard-google-support.pro'
-            proguardFile 'proguard-google-play-services.pro'
         }
     }
 

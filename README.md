@@ -1,8 +1,8 @@
-# Computop SDK [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)  [![Gradle Version](https://img.shields.io/badge/gradle-3.0-green.svg)](https://docs.gradle.org/current/release-notes) [![Retrolambda](https://img.shields.io/badge/java-8-green.svg)](https://github.com/evant/gradle-retrolambda)
+# TimeBomb [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)  [![Gradle Version](https://img.shields.io/badge/gradle-3.0-green.svg)](https://docs.gradle.org/current/release-notes) [![Retrolambda](https://img.shields.io/badge/java-8-green.svg)](https://github.com/evant/gradle-retrolambda)
 
 ## Introduction
 
-Android SDK for [Computop](https://www.computop.com/).
+Blocks the user from keep using the App after a period of time based on build time. Mainly to have control preview versions handed out using e.g.: hockey or fabric.
 
 ## How to install
 
@@ -24,7 +24,13 @@ Android SDK for [Computop](https://www.computop.com/).
 
 ## How to use
 
-    TimeBomb.bomb
+1 Add to build date to defaultConfig
+
+     buildConfigField "String", "BUILD_DATE", "\"" + new Date().getTime() + "\""
+
+2 Invoke check at app start
+
+    TimeBomb.bombAfterDays(this, BuildConfig.BUILD_DATE, 14);
 
 Adapt Message in string.xml 
 
