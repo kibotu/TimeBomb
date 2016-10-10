@@ -24,11 +24,11 @@ Blocks the user from keep using the App after a period of time based on build ti
 
 ## How to use
 
-1. Add to build date to defaultConfig
+1. Add to build date to [defaultConfig](https://github.com/kibotu/TimeBomb/blob/master/app/build.gradle#L15) 
 
         buildConfigField "String", "BUILD_DATE", "\"" + new Date().getTime() + "\""
 
-2. Invoke check at app start
+2. Invoke check [at app start](https://github.com/kibotu/TimeBomb/blob/master/app/src/main/java/net/kibotu/timebomb/app/MainActivity.java#L17)
    
         TimeBomb.bombAfterDays(this, BuildConfig.BUILD_DATE, 14);
 
