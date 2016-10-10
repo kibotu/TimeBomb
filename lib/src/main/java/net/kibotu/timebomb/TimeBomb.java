@@ -66,9 +66,10 @@ public class TimeBomb {
         long difference = daysBetween(buildDate, today);
 
         long timeLeft = days - difference;
-        Log.v(TAG, "[bombAfterDays] Bomb in " + timeLeft + "d Build Date=" + sdf1.format(buildDate) + " Today=" + sdf1.format(today) + " Passed Days=" + difference);
+        if (enableLogging)
+            Log.v(TAG, "[bombAfterDays] Bomb in " + timeLeft + "d Build Date=" + sdf1.format(buildDate) + " Today=" + sdf1.format(today) + " Passed Days=" + difference);
 
-        if (difference <= days)
+        if (difference < days)
             return timeLeft;
 
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
