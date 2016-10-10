@@ -5,6 +5,8 @@
 
 Blocks the user from keep using the App after a period of time based on build time. Mainly to have control preview versions handed out using e.g.: hockey or fabric.
 
+[Screenshot](https://raw.githubusercontent.com/kibotu/TimeBomb/master/screenshot.png)
+
 ## How to install
 
     compile 'com.github.kibotu:TimeBomb:-SNAPSHOT'
