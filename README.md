@@ -1,4 +1,4 @@
-# TimeBomb [![](https://jitpack.io/v/kibotu/TimeBomb.svg)](https://jitpack.io/#kibotu/TimeBomb) [![Build Status](https://travis-ci.org/kibotu/TimeBomb.svg?branch=master)](https://travis-ci.org/kibotu/TimeBomb) [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)  [![Gradle Version](https://img.shields.io/badge/gradle-3.0-green.svg)](https://docs.gradle.org/current/release-notes) [![Retrolambda](https://img.shields.io/badge/java-8-green.svg)](https://github.com/evant/gradle-retrolambda)
+# TimeBomb [![Donation](https://img.shields.io/badge/donate-please-brightgreen.svg)](https://www.paypal.me/janrabe) [![About Jan Rabe](https://img.shields.io/badge/about-me-green.svg)](https://about.me/janrabe) [![](https://jitpack.io/v/kibotu/TimeBomb.svg)](https://jitpack.io/#kibotu/TimeBomb) [![Build Status](https://travis-ci.org/kibotu/TimeBomb.svg?branch=master)](https://travis-ci.org/kibotu/TimeBomb) [![API](https://img.shields.io/badge/API-15%2B-brightgreen.svg?style=flat)](https://android-arsenal.com/api?level=15)  [![Gradle Version](https://img.shields.io/badge/gradle-3.0-green.svg)](https://docs.gradle.org/current/release-notes) [![Retrolambda](https://img.shields.io/badge/java-8-green.svg)](https://github.com/evant/gradle-retrolambda)
 
 ## Introduction
 
@@ -19,7 +19,7 @@ Blocks the user from keep using the App after a period of time based on build ti
 #### Build Requirements
 
 - JDK7, JDK8
-- Android Build Tools 24.0.2
+- Android Build Tools 24.0.3
 - Android SDK 24 
 
 ## How to use
